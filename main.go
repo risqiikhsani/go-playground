@@ -3,8 +3,9 @@ package main
 import (
 
 	//"runtime"
-	"sync"
 
+	"github.com/risqiikhsani/testplayground/array"
+	"github.com/risqiikhsani/testplayground/slice"
 	"github.com/risqiikhsani/testplayground/testgoroutines"
 	"github.com/risqiikhsani/testplayground/testinterface"
 	"github.com/risqiikhsani/testplayground/teststruct"
@@ -13,8 +14,6 @@ import (
 	// "github.com/risqiikhsani/testplayground/testinterface2"
 	//"github.com/risqiikhsani/testplayground/teststruct"
 )
-
-var wg sync.WaitGroup
 
 func main() {
 
@@ -29,4 +28,9 @@ func main() {
 	testgoroutines.TestGoroutine3()
 
 	testgoroutines.TestGoroutine2()
+
+	array.TestArray()
+
+	slice.TestSlice()
+
 }
