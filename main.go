@@ -1,36 +1,33 @@
 package main
 
-import (
+//"runtime"
 
-	//"runtime"
-
-	"github.com/risqiikhsani/testplayground/array"
-	"github.com/risqiikhsani/testplayground/slice"
-	"github.com/risqiikhsani/testplayground/testgoroutines"
-	"github.com/risqiikhsani/testplayground/testinterface"
-	"github.com/risqiikhsani/testplayground/teststruct"
-	// "github.com/risqiikhsani/testplayground/testinterface"
-	// "github.com/risqiikhsani/testplayground/testinterface1"
-	// "github.com/risqiikhsani/testplayground/testinterface2"
-	//"github.com/risqiikhsani/testplayground/teststruct"
-)
+// "github.com/risqiikhsani/testplayground/array"
+// "github.com/risqiikhsani/testplayground/slice"
+// "github.com/risqiikhsani/testplayground/testgoroutines"
+// "github.com/risqiikhsani/testplayground/testinterface"
+// "github.com/risqiikhsani/testplayground/teststruct"
+// "github.com/risqiikhsani/testplayground/testinterface"
+// "github.com/risqiikhsani/testplayground/testinterface1"
+// "github.com/risqiikhsani/testplayground/testinterface2"
+//"github.com/risqiikhsani/testplayground/teststruct"
 
 func main() {
 
-	teststruct.TestStruct()
+	// teststruct.TestStruct()
 
-	testinterface.TestInterface()
+	// testinterface.TestInterface()
 
-	testgoroutines.TestGoroutine()
+	// testgoroutines.TestGoroutine()
 
-	testgoroutines.TestGoroutine4()
+	// testgoroutines.TestGoroutine4()
 
-	testgoroutines.TestGoroutine3()
+	// testgoroutines.TestGoroutine3()
 
-	testgoroutines.TestGoroutine2()
+	// testgoroutines.TestGoroutine2()
 
-	array.TestArray()
+	// array.TestArray()
 
-	slice.TestSlice()
+	// slice.TestSlice()
 
 }
