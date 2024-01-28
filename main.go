@@ -1,6 +1,14 @@
 package main
 
-import "github.com/risqiikhsani/testplayground/input"
+import (
+	"fmt"
+
+	"github.com/risqiikhsani/testplayground/db"
+
+	"github.com/risqiikhsani/testplayground/inputOutput"
+)
+
+// "github.com/risqiikhsani/testplayground/input"
 
 //"runtime"
 
@@ -32,6 +40,32 @@ func main() {
 
 	// slice.TestSlice()
 
-	input.Test()
+	// input.Test()
+
+	db := db.Db()
+	defer db.Close()
+
+	next := true
+	for next {
+		fmt.Print("Get data (1) or insert data (2) or exit (3)? :")
+		var input uint
+		fmt.Scanln(&input)
+		switch input {
+		case 1:
+			inputOutput.ShowData(db)
+		case 2:
+			fmt.Print("how many data will be inserted :")
+			var amount uint
+			fmt.Scanln(&amount, 3)
+			for i := 0; i < int(amount); i++ {
+				inputOutput.InputData(db)
+			}
+		case 3:
+			next = false
+			fmt.Println("Exited")
+		default:
+			fmt.Println("Invalid input")
+		}
+	}
 
 }
