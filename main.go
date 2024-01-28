@@ -1,5 +1,7 @@
 package main
 
+import "github.com/risqiikhsani/testplayground/input"
+
 //"runtime"
 
 // "github.com/risqiikhsani/testplayground/array"
@@ -29,5 +31,7 @@ func main() {
 	// array.TestArray()
 
 	// slice.TestSlice()
+
+	input.Test()
 
 }
