@@ -2,10 +2,6 @@ package main
 
 import (
 	"fmt"
-	"log"
-
-	"github.com/risqiikhsani/testplayground/db"
-	"github.com/risqiikhsani/testplayground/inputOutput"
 )
 
 // "github.com/risqiikhsani/testplayground/input"
@@ -70,16 +66,16 @@ func main() {
 	// 	}
 	// }
 
-	client, ctx, cancel := db.ConnectMongo()
-	// Defer the cancellation of the context
-	defer cancel()
-	// Defer the disconnection of the client
-	defer func() {
-		if err := client.Disconnect(ctx); err != nil {
-			log.Fatal(err)
-		}
-	}()
-	//inputOutput.InputData2(client)
-	inputOutput.ShowData2(client)
+	// client, ctx, cancel := db.ConnectMongo()
+	// // Defer the cancellation of the context
+	// defer cancel()
+	// // Defer the disconnection of the client
+	// defer func() {
+	// 	if err := client.Disconnect(ctx); err != nil {
+	// 		log.Fatal(err)
+	// 	}
+	// }()
+	// //inputOutput.InputData2(client)
+	// inputOutput.ShowData2(client)
 
 }
